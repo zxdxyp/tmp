@@ -27,7 +27,8 @@ int main(void)
 		printf("%d %d\n", x, y);
 		fflush(stdout);
 
-		fprintf(fd, "step %d : %d %d\n", step, x, y);
+		//fprintf(fd, "step %d : %d %d\n", step, x, y);
+		fprintf(fd, "<%d,%d>", x, y);
 		fflush(fd);
 
 		oldx = x;
