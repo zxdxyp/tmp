@@ -10,6 +10,9 @@ clean:
 run:
 	./demo
 
+p:
+	mkfifo p1 p2
+
 t1:
 	rm log.txt
 	cat p1 | ./demo pc | ./log > p2
