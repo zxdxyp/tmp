@@ -2,8 +2,8 @@
 #include <string.h>
 
 /* define chessboard size */
-#define ROW  10
-#define COL  10
+#define ROW  15
+#define COL  15
 
 /* define how many chess win */
 #define N  5
@@ -189,7 +189,7 @@ int main(int argc, char * argv[])
 
 		/* put the chess down */
 		put(x, y, who);
-		step++;
+		
 
 		printf("step %d : %d %d [Player %d]\n", step, x, y, who); 
 
@@ -201,6 +201,9 @@ int main(int argc, char * argv[])
 			printf("player %d wins! (%d %d) \n", who, x, y);
 			break;
 		}
+		sleep(1);
+
+
 	}
 
 	printf("game over!\n");
